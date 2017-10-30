@@ -1,0 +1,36 @@
+{
+  "name": "testServer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app/index.js --exec babel-node --presets es2015,stage-2",
+    "build": "babel app -d dist",
+    "serve": "node dist/index.js",
+    "test": "mocha --compilers js:babel-register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arashfiroozabadi/testServer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arashfiroozabadi/testServer/issues"
+  },
+  "homepage": "https://github.com/Arashfiroozabadi/testServer#readme",
+  "dependencies": {
+    "babel-loader": "^7.1.2",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "mocha": "^4.0.1",
+    "nodemon": "^1.12.1"
+  }
+}
