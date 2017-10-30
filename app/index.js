@@ -13,6 +13,7 @@ app.use((req, res, next) =>{
 	);
     next();
 });
+
 MongoClient.connect(url, function(err, db) {
 	if (err) throw err;
 	//Create a collection name "customers":
